@@ -1,0 +1,12 @@
+version: '3'
+services:
+  python3:
+    build: .
+    container_name: 'my-env'
+    working_dir: '/DS_PythonLecture'
+    tty: true
+    stdin_open: true
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/DS_PythonLecture
